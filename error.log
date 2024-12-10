@@ -1,0 +1,2 @@
+[2024-11-26T18:24:13.470Z] error: Database Connection Failed. Error:Error: querySrv ENOTFOUND _mongodb._tcp.mycluster.iu00t.
+[2024-11-26T18:24:16.672Z] error: Database Connection Failed. Error:Error: querySrv ENOTFOUND _mongodb._tcp.mycluster.iu00t.
