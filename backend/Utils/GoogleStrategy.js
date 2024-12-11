@@ -3,9 +3,9 @@ import { User } from "../Models/Usermodel.js";
 
 export const GoogleProvider = new googleStrategy(
     {
-        clientID:"772390556138-7hmnotae08cvprmbma6muihl99l5khsm.apps.googleusercontent.com",
-        clientSecret:"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",
-        callbackURL:"http://localhost:5000/auth/loginWithGoogle/callback"
+        clientID:process.env.GOOGLE_CLIENT_ID,
+        clientSecret:process.env.GOOGLE_CLIENT_SECRET,
+        callbackURL:process.env.GOOGLE_CALLBACK_URL
     },
     async function(accessToken , refreshToken , profile , callback){
         try {
