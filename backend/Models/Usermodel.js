@@ -14,8 +14,10 @@ const userSchema = new mongoose.Schema({
         default:false
     },
     password:{
-        type:String,
-        required:true
+        type: String,
+        required: function () {
+            return !this.is_verified;
+        },
     },
     resetPasswordToken : String,
     resetPasswordExpiredAt:Date,
